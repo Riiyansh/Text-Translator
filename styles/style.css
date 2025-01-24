@@ -363,3 +363,40 @@ body.dark {
     transform: rotate(90deg);
   }
 }
+
+
+
+
+header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10; /* Ensure it remains on top */
+}
+
+/* Style for the heading text */
+.main-heading {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: var(--primary-text-color);
+  margin: 0;
+  font-family: "Trebuchet MS", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.main-heading::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  margin: 10px auto 0;
+  background-color: var(--bg-color);
+  border-radius: 2px;
+}
